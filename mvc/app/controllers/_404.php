@@ -1,6 +1,8 @@
 <?php
-    class _404{
-        public function index(){
-            echo "File not found!";
+    class _404 extends Controller
+    {
+        public function index()
+        {
+            $this->view('404');
         }
     }
