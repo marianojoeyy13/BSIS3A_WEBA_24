@@ -3,7 +3,7 @@
 class Database
 {    private function connect ()
     {
-        $string = "mysql:host=localhost;dbname=mvc_db";
+        $string = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME;
         $con = new PDO($string,'root','');
         return $con;
      }
